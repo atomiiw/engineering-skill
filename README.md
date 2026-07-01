@@ -43,7 +43,14 @@ This directory is already a git repository on `main`. To publish it:
    git push -u origin main
    ```
 
-3. After the first push, the install command below will clone from the published repository.
+3. If SSH port 22 is blocked on your network, use GitHub SSH over port 443:
+
+   ```bash
+   git remote set-url origin ssh://git@ssh.github.com:443/atomiiw/engineering-skill.git
+   git push -u origin main
+   ```
+
+4. After the first push, the install command below will clone from the published repository.
 
 If you use GitHub CLI, the same publish step can be done in one command:
 
