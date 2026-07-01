@@ -24,40 +24,6 @@ engineering-skill/
 
 The `references/` ship *with* the skill, so the full playbook is readable wherever it's installed — not just in this repo.
 
-## Publish this repository
-
-This directory is already a git repository on `main`. To publish it:
-
-1. Create an empty remote repository named `engineering-skill` on GitHub, GitLab, or another git host. Do not initialize the remote with a README, license, or `.gitignore`; this repo already has those files.
-2. Add the remote and push:
-
-   ```bash
-   git remote add origin git@github.com:atomiiw/engineering-skill.git
-   git push -u origin main
-   ```
-
-   Prefer HTTPS?
-
-   ```bash
-   git remote add origin https://github.com/atomiiw/engineering-skill.git
-   git push -u origin main
-   ```
-
-3. If SSH port 22 is blocked on your network, use GitHub SSH over port 443:
-
-   ```bash
-   git remote set-url origin ssh://git@ssh.github.com:443/atomiiw/engineering-skill.git
-   git push -u origin main
-   ```
-
-4. After the first push, the install command below will clone from the published repository.
-
-If you use GitHub CLI, the same publish step can be done in one command:
-
-```bash
-gh repo create engineering-skill --public --source=. --remote=origin --push
-```
-
 ## Install
 
 ```bash
